@@ -13,7 +13,7 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+ Welcome to my website’s feature pages! Here, I’ve designed and built unique pages using HTML and CSS to highlight various features or content. Each page is crafted to showcase different aspects, blending creative design with solid coding practices. I’ve focused on making them visually appealing and easy to navigate, so you can explore and enjoy the content seamlessly. Dive in and discover what each feature page has to offer!
 </div>
 
 <br />

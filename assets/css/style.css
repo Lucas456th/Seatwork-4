@@ -1,0 +1,166 @@
+
+
+@font-face {
+    font-family: 'Super Font';
+    src: url(../font/super-font.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Brigade Font';
+    src: url(../font/brigade-font.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Race Font';
+    src: url(../font/race-bold-font.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Line Font';
+    src: url(../font/line-font.ttf);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #2b00ff;
+  background: #ffffff;
+}
+nav {
+  position: fixed;
+  background: #3f3f3f;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.allsides-1{
+    padding: 10px 12px;
+}
+
+
+.allsides-1 {
+    background:
+      linear-gradient(currentColor 0 0) 100% 0,
+      linear-gradient(currentColor 0 0) 0 0,
+      linear-gradient(currentColor 0 0) 0 100%,
+      linear-gradient(currentColor 0 0) 100% 100%;
+    background-size: var(--d, 0) 2px, 2px var(--d, 0);
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: black 2px 2px;
+    font-weight: 900;
+    font-family: 'Brigade Font';
+  }
+  .allsides-1:hover {
+    --d: 100%;
+  }
+.menu ul {
+  display: inline-flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+
+.img {
+  background: url("../img/gaming.jpg") no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title {
+  color: #ff0000;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: 'Race font';
+  text-shadow: black 2px 2px;
+}
+.center .sub_title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  text-shadow: black 2px 2px 1px;
+}
+.menu-links .menu-button{
+    font-size: 15px;
+    font-family: 'Race Font';
+    text-decoration: none;
+    color: #fefbfb;
+}
+
+.center .btns {
+  margin-top: 20px;
+}
+.menu-links .btn {
+    width: 176px;
+    height: 35px;
+    max-width: 200px;
+    color: #ff0000;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+   }
+   
+   .menu-links .btn {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, gray 0%, black 100%);
+    border: none;
+   }
+   
+   .menu-links .btn:before {
+    height: 0%;
+    width: 2px;
+   }
+   
+   .menu-links .btn:hover {
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.5),
+                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+       inset -4px -4px 6px 0 rgba(255, 252, 252, 0.2),
+       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+   }
