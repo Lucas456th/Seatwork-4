@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:300,400,700,800|Open+Sans:300');
 
+@font-face {
+  font-family: 'Super Font';
+  src: url(../font/super-font.ttf);
+}
+
+@font-face {
+  font-family: 'Brigade Font';
+  src: url(../font/brigade-font.ttf);
+}
+
+@font-face {
+  font-family: 'Race Font';
+  src: url(../font/race-bold-font.ttf);
+}
+
+@font-face {
+  font-family: 'Line Font';
+  src: url(../font/line-font.ttf);
+}
 body {
   background: url("../img/road.jpg") no-repeat center center fixed;
   background-position: center;
@@ -12,29 +31,63 @@ header.header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background: #fff;
+  background: #3f3f3f;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header__left .feature-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Brigade Font';
   font-weight: 700;
   font-size: 24px;
-  color: #115dd8;
+  text-shadow: #000000 1px 0.5px;
+}
+.feature-title{
+  padding: 10px 12px;
 }
 
-.header__right a {
+
+.feature-title {
+  background:
+    linear-gradient(currentColor 0 0) 100% 0,
+    linear-gradient(currentColor 0 0) 0 0,
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 100% 100%;
+  background-size: var(--d, 0) 2px, 2px var(--d, 0);
+  background-repeat: no-repeat;
+  transition: 0.5s;
   text-decoration: none;
-  margin-left: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #115dd8;
-  transition: color 0.2s;
+  color: #ffffff;
+  font-size: 20px;
+  text-shadow: black 2px 2px;
+  font-weight: 900;
+}
+.feature-title:hover {
+  --d: 100%;
+}
+.header__right a {
+  padding: 1.1em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
 .header__right a:hover {
-  color: #252525;
+  background-color: #115dd8;
+  box-shadow: 0px 15px 20px #00368e;
+  color: #fff;
+  transform: translateY(-7px);
+}
+.header__right a:active {
+  transform: translateY(-1px);
 }
 
 main {
@@ -101,7 +154,7 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 64px;
   line-height: 50px;
-  color: #181e28;
+  color: #ff0000;
 }
 
 .featured_text p {
@@ -113,7 +166,7 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   text-transform: uppercase;
-  color: #686e77;
+  color: #000000;
   font-weight: 300;
   margin-bottom: 5px;
 }
@@ -145,7 +198,8 @@ main {
   font-weight: 300;
   line-height: 27px;
   font-size: 16px;
-  color: #555;
+  text-align: justify;
+  color: #000000;
 }
 
 span.stock {

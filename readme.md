@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/computer.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/gaming-setup.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Features Display Website</h3>
@@ -57,20 +57,21 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+### What is the project?
+- The project is to create a Features Display Website that showcases distinct design layouts for various features using only HTML and CSS. It involves building multiple pages, each designed to highlight specific features or content, demonstrating skills in structuring and styling web pages.
+### Whats the purpose?
+- Showcase Design and Coding Skills: Display the ability to create engaging, feature-specific web pages using HTML and CSS.
+- Demonstrate Layout Creativity: Highlight different layout designs and styles, focusing on creative and technical execution.
+
+- Enhance User Experience: Craft visually appealing and user-friendly pages that effectively present the content and stand out.
+
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website Website
+- Responsive CSS design
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -117,4 +118,9 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| CSS animations| used this as a guide for css animation | https://www.w3schools.com/css/default.asp |
+| Button Effects and Animations| used this as a reference for button effects | https://uiverse.io/ferlagher/afraid-dingo-99 |
+| Button Icons | used this for icons and png buttons | https://www.flaticon.com/search?word=github |
+| Overlay animations | used this for css button animations | https://dev.to/afif/100-underline-overlay-animation-the-ultimate-css-collection-4p40 |
+| Reference templates | used this as a guide Template | https://colorlib.com/wp/cat/landing-page/ |
+
