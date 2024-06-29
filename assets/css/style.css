@@ -30,6 +30,11 @@
   background: #ffffff;
 }
 
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
 nav {
   position: fixed;
   background: #3f3f3f;
@@ -82,11 +87,10 @@ nav .menu {
 }
 
 .img {
-  background: url("../img/gaming.jpg") no-repeat;
+  background: url("../img/gaming.jpg") no-repeat center center fixed;
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: center;
   position: relative;
 }
 
@@ -175,13 +179,17 @@ nav .menu {
 /* Updated logo-container positioning */
 .logo-container {
   position: fixed;
-  bottom: -220px; /* Ensure visibility on all screen sizes */
-  right: 10px; 
+  bottom: -230px; /* Ensure visibility on all screen sizes */
+  right: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .wheels-logo {
   width: 50px;
   height: auto;
+  position: fixed;
 }
 
 .sub-logo {
@@ -217,48 +225,61 @@ nav .menu {
 }
 
 
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .center .title {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   .center .sub_title {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .menu-links .btn {
-      width: 140px;
-      padding: 8px 20px;
+    width: 140px;
+    padding: 8px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .center .title {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .center .sub_title {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .menu-links .btn {
-      width: 120px;
-      padding: 6px 15px;
+    width: 120px;
+    padding: 6px 15px;
   }
 
   nav .menu {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .menu ul {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .menu ul li {
-      margin-left: 0;
-      margin-top: 5px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .logo-container {
+    flex-direction: row;
+    bottom: 10px;
+  }
+
+  .sub-logo {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .logo-container:hover .sub-logo {
+    width: 20px;
   }
 }
