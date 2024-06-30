@@ -29,24 +29,35 @@ body {
 }
 
 nav {
-  background-color: #111;
+  background-color: rgb(44, 44, 44);
   color: white;
   padding: 20px 50px;
 }
 
 .navTop {
-  font-family:'Brigade Font';
+  font-family:'Super Font';
   font-size: 15px;
+  text-shadow: black 2px 3px;
   color: #369e62;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+ 
+  }
+  .navTop:hover {
+   --c:#000;
+   color:#fff;
+   --x:calc(100% - 10px);
+   background-size: 100% 100%;
+   transition: 0.2s,clip-path linear 0.4s 0.2s, background-size linear 0.4s 0.2s, color linear 0.4s 0.2s; 
+  }
+
+
 
 .search {
   display: flex;
   align-items: center;
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -57,7 +68,7 @@ nav {
 }
 
 .searchInput::placeholder {
-  color: lightgray;
+  color: rgb(0, 0, 0);
 }
 
 .limitedOffer {

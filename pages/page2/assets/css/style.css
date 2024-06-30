@@ -36,8 +36,9 @@ header.header {
 }
 
 .header__left .feature-title {
-  font-family: 'Brigade Font';
+  font-family: 'Brigade FonT';
   font-weight: 700;
+  color: #fff;
   font-size: 24px;
   text-shadow: #000000 1px 0.5px;
 }
@@ -47,22 +48,50 @@ header.header {
 
 
 .feature-title {
+  --c:20px;  /* the cube perspective */
+
+  --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+
+  border: solid transparent;
+  border-width:0 0 var(--c) var(--c) ;
   background:
-    linear-gradient(currentColor 0 0) 100% 0,
-    linear-gradient(currentColor 0 0) 0 0,
-    linear-gradient(currentColor 0 0) 0 100%,
-    linear-gradient(currentColor 0 0) 100% 100%;
-  background-size: var(--d, 0) 2px, 2px var(--d, 0);
-  background-repeat: no-repeat;
-  transition: 0.5s;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-  text-shadow: black 2px 2px;
-  font-weight: 900;
+    linear-gradient(-45deg,transparent var(--g),rgba(255,255,255,0.6) 0) left   /var(--c) 100%,
+    linear-gradient(135deg,transparent var(--g),rgba(255,255,255,0.3) 0) bottom /100% var(--c);
+  background-repeat:no-repeat;
+  background-origin:border-box;
+  transition:0.3s,background-color 0.3s 0.3s,color 0.3s 0.3s;
+  transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+  clip-path: 
+    polygon(var(--c) 0%, var(--c) 0%, 
+    100% 0%, 
+    100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+    var(--c) calc(100% - var(--c)),
+    var(--c) calc(100% - var(--c)));
 }
 .feature-title:hover {
-  --d: 100%;
+  transition:0.3s 0.3s,background-color 0.3s,color 0.3s;
+  background-color:blue;
+  color:#fff;
+  transform:translate(0,0);
+  clip-path: 
+    polygon(0% var(--c), var(--c) 0%, 
+    100% 0%, 
+    100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+    0% 100%,0% 100%);
+}
+
+/**/
+div[feature-title] {
+  display:inline-block;
+  font-size:40px;
+  font-family:sans-serif;
+  margin:25px;
+  padding:8px;
+  cursor:pointer;
+}
+
+.feature-title {
+  text-align:center;
 }
 .header__right a {
   padding: 1.1em 3em;
